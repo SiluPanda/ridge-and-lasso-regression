@@ -2,7 +2,7 @@ import numpy as np
 from utils import *
 
 def preprocess(X, Y):
-	''' TASK 0
+	''' 
 	X = input feature matrix [N X D] 
 	Y = output values [N X 1]
 	Convert data X, Y obtained from read_data() to a usable format by gradient descent function
@@ -43,7 +43,7 @@ def preprocess(X, Y):
 	
 
 def grad_ridge(W, X, Y, _lambda):
-	'''  TASK 2
+	'''  
 	W = weight vector [D X 1]
 	X = input feature matrix [N X D]
 	Y = output values [N X 1]
@@ -67,7 +67,7 @@ def grad_ridge(W, X, Y, _lambda):
 	
 
 def ridge_grad_descent(X, Y, _lambda, max_iter=30000, lr=0.00001, epsilon = 1e-4):
-	''' TASK 2
+	''' 
 	X 			= input feature matrix [N X D]
 	Y 			= output values [N X 1]
 	_lambda 	= scalar parameter lambda
@@ -104,7 +104,7 @@ def ridge_grad_descent(X, Y, _lambda, max_iter=30000, lr=0.00001, epsilon = 1e-4
 
 
 def k_fold_cross_validation(X, Y, k, lambdas, algo):
-	''' TASK 3
+	''' 
 	X 			= input feature matrix [N X D]
 	Y 			= output values [N X 1]
 	k 			= number of splits to perform while doing kfold cross validation
@@ -183,7 +183,7 @@ def k_fold_cross_validation(X, Y, k, lambdas, algo):
 	
 
 def coord_grad_descent(X, Y, _lambda, max_iter=1000):
-	''' TASK 4
+	''' 
 	X 			= input feature matrix [N X D]
 	Y 			= output values [N X 1]
 	_lambda 	= scalar parameter lambda
